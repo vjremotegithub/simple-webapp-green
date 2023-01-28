@@ -3,6 +3,5 @@ kind: Kustomization
 namespace: simple-webapp-green
 
 resources:
-  - namespace.yaml
   - deployment.yaml
   - service.yaml
