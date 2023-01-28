@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: simple-webapp-green-clusterip
+  namespace: simple-webapp-green
+spec:
+  selector:
+    app: simple-webapp-green
+  ports:
+    - port: 80
+      targetPort: 8080
